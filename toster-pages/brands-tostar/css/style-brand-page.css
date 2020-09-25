@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+/*START OF NAVBAR SECTION
+      
+      */
+
+nav {
+  width: auto;
+  height: 60px;
+  background-color: #6f7070;
+}
+
+nav .main-ul {
+  float: right;
+  margin-right: 20px;
+}
+nav .main-ul li {
+  display: inline-block;
+  line-height: 60px;
+}
+nav .main-ul li a {
+  text-decoration: none;
+  margin-left: 70px;
+  font-family: "Tajawal", sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  color: #e1e1e1;
+  border: 0px solid #6f7070;
+  border-radius: 20px;
+  transition: 0.4s;
+  padding: 3px;
+}
+nav .main-ul li a:hover {
+  background-color: white;
+  color: #6f7070;
+}
+#toggle1 {
+  display: none;
+}
+.bars {
+  display: none;
+  color: black;
+  font-size: 24px;
+  line-height: 0px;
+  margin-right: 100px;
+}
+@media (max-width: 425px) {
+  nav {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0;
+  }
+  .bars {
+    position: absolute;
+    color: white;
+    display: block;
+    margin-left: 340px;
+    margin-top: 15px;
+  }
+  nav .main-ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    margin-top: 59px;
+    right: -110%;
+    background-color: #6f7070;
+    text-align: left;
+    transition: 0.8s;
+    z-index: 999999;
+    border-radius: 10px;
+  }
+  nav .main-ul li {
+    display: block;
+    line-height: 0;
+  }
+  nav .main-ul li a {
+    margin-left: 0;
+    margin-right: 170px;
+    display: block;
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+    margin-top: 80px;
+  }
+
+  #toggle1:checked ~ nav .main-ul {
+    right: -170px;
+  }
+}
+/*END OF NAVBAR SECTION
+      
+      */
+/*START OF CONTAINER2
+  
+  */
+.container2 {
+  position: relative;
+  width: auto;
+  height: 500px;
+  background-color: white;
+  margin-top: 1px;
+}
+.p1 {
+  font-size: 28px;
+  color: #6f7070;
+  font-family: "Almarai", sans-serif;
+  font-weight: 700;
+  line-height: 80px;
+  margin-right: 50px;
+  margin-top: 50px;
+  text-align: right;
+}
+.types-ul {
+  float: left;
+  margin-top: 70px;
+}
+.types-ul > li {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 20px;
+  list-style: none;
+  margin-left: 35px;
+  text-align: center;
+  transition: 0.4s;
+}
+.types-ul a {
+  text-decoration: none;
+}
+.types-ul li:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 1px 1px 5px #5f5a5a;
+}
+.types-ul .image1,
+.image2,
+.image4,
+.image5 {
+  width: 170px;
+  height: 100px;
+}
+.image3 {
+  width: 170px;
+  height: 100px;
+}
+.p2 {
+  font-size: 19px;
+  color: black;
+  font-family: "Tajawal", sans-serif;
+  margin-top: 5px;
+  font-weight: 200;
+}
+@media (max-width: 425px) {
+  .container2 {
+    z-index: -9999;
+  }
+  .types-ul > li {
+    margin-top: 20px;
+  }
+  .types-ul {
+    float: left;
+    margin-top: 20px;
+  }
+}
